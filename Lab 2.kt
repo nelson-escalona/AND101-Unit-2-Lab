@@ -59,7 +59,7 @@ interface Mailer {
 
 import java.lang.IllegalArgumentException
 
-fun failWithWrongAge(age: Int?)    {
+fun failWithWrongAge(age: Int?): Nothing    {
     throw IllegalArgumentException("Wrong age: $age")
 }
 
